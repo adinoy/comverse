@@ -3,74 +3,62 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Comverse</title> 
-
 		<link rel="stylesheet"  href="css/main.css">
 	</head>
 	<body>
 <!-- header begins -->
 	<header>
 		<figure>
-			<img src="http://placehold.it/110x50" alt="logo" title="logo" 
-			height="50" width="110">
+			<img src="http://placehold.it/110x50" alt="logo"  title="logo"  id="logo" height="50" width="110">
 		</figure>
-
-		<nav>
+		<nav id="header-menu">
 			<a href="#">YOUR NEEDS</a>
 			<a href="#">OUR PORTFOLIO</a>
 			<a href="#">NEWS & MEDIA</a>
 			<a href="#">ABOUT COMVERSE</a>
 		</nav>
-
-		<ul>
-			<li>En</li>
-			<li>HB</li>
-		</ul>
-		
-			
-		<a href="#">Customer login</a>
-
-		<form action="#" method="GET">	
-			<div>	
+		<form class="lang" action="#" method="GET">	
+			<select name="lang" id="lang">
+				<option value="english" selected="">EN</option>
+				<option value="hebrew">HE</option>
+				<option value="french">FR</option>
+			</select>	
+			<a href="#">Customer login</a>
+			<div class="search">	
 				<label for="search"></label>
 				<input type="search" name="search" id="search">
 				<button type="submit">Search</button>
 			</div>
-
 		</form>
 	</header>
 <!-- header ends -->
 <!-- main begins -->
-	<main>
-		<section>
-			<h1 id="main-heading">Free Your Markets From IT Compelxity</h1>
-
+	<main class="main">
+<!-- section -->
+		<section class="first-section">
+			<h1 class="title">Free Your Markets From IT Compelxity</h1>
 			<p>Comverse Policy Studio</p>
 			<p><strong>1st</strong> Ever Marketing-Oriented Policy Tools</p>
-			
-			<a href="#">LEARN MORE</a>
-			
-			<ul>
-				<h3>
-					Comverse Is Value Added Service Global Market Leader
-				</h3>
-				<li><a href="#">Read More</a></li>
-			</ul>
-			<ul>
-				<h3>
-					Managed Services World Congress September 18-19 Berlin, Germany
-				</h3>
-				<li><a href="#">Read More</a></li>
-			</ul>
-			<ul>
-				<h3>
-					Comverse: Enabling A World Of Conected Possibilities
-				</h3>
-				<li><a href="#">Read More</a></li>
+			<a class="btn" href="#">LEARN MORE</a>
+			<ul class="box">
+				<li id="first">
+					<p>Comverse Is Value Added Service Global Market Leader</p>
+					<a href="#">Read More</a>
+				</li>
+				<li id="second">
+					<p>Managed Services World Congress September 18-19 Berlin, Germany</p>
+					<a href="#">Read More</a>
+				</li>
+				<li id="third">
+					<p>Comverse: Enabling A World Of Conected Possibilities</p>
+					<a href="#">Read More</a>
+				</li>
 			</ul>
 		</section>
-
-		<section>
-			<h2>What Can We Do For You?</h2>
+<!-- section ends -->
+<!-- section begins-->
+		<section class="solutions">
+			<h2 class="section-title">What Can We Do For You?</h2>
 			<ul>
 				<li>
 					<img src="http://placehold.it/50x50" alt="data" title="data"
@@ -103,17 +91,16 @@
 					<a href="#">Social media</a>
 				</li>
 			</ul>
-
-			<a href="#">See all our solutions</a>
+			<a class="btn" href="#">See all our solutions</a>
 		</section>
-
-		<section>
-			<h2>WHAT'S HAPPENING AT COMVERSE?</h2>
-
-			<ul>
+<!-- section ends -->
+<!-- section begins-->
+		<section class="news"> 
+			<h2 class="section-title">WHAT'S HAPPENING AT COMVERSE?</h2>
+			<ul class="widgets">
 				<li>
 					<h3>News</h3>
-					<p>4 SEP</p>
+					<time>04 SEP</time>
 					<p>
 						Comverse regains lead </br> 
 						in convergent </br>
@@ -122,7 +109,7 @@
 				</li>
 				<li>
 					<h3>Events</h3>
-					<p>4 SEP</p>
+					<time>04 SEP</time>
 					<p>
 						Comverse regains lead </br> 
 						in convergent </br>
@@ -130,20 +117,20 @@
 					</p>
 				</li>
 				<li>
-					<p>4 SEP</p>
+					<time>04 SEP</time>
 					<p>
 						Comverse regains lead </br> 
 						in convergent </br>
 						changing market regains lead in
 					</p>
 				</li>
-				
 			</ul>
 		</section>
-
-		<article>
-			<h2>SUCCESS STORIES</h2>
-			<ul>
+<!-- section ends -->
+<!-- article begins -->
+		<article class="whyus">
+			<h2 class="section-title">SUCCESS STORIES</h2>
+			<ul class="succes">
 				<li>
 					<figure>
 						<img src="http://placehold.it/50x50" alt="img" 
@@ -247,15 +234,15 @@
 					 </figure>
 				</li>
 			</ul>
-			<a href="#">All 256 Success Stories</a>
+			<a class="btn" href="#">All 256 Success Stories</a>
 		</article>
+<!-- article ends -->
 	</main>
 <!-- main ends -->
 <!-- footer begins -->
-	<footer>
+	<footer id="footer-container">
 		<h6>KEY SOLUTIONS</h6>
-		<ul>
-			
+		<ul class="footer-links">
 			<li><a href="#">Montizing Data</a></li>
 			<li><a href="#">Over The Top (OTT)</a></li>
 			<li><a href="#">Machine To Machine (MTM)</a></li>
@@ -266,16 +253,15 @@
 			<li><a href="#">Social Media</a></li>
 			<li><a href="#">4G/LTE</a></li>
 		</ul>
-		<ul>
+		<ul class="footer-links">
 			<li><a href="#">Billing</a></li>
 			<li><a href="#">VAS</a></li>
 			<li><a href="#">Mobile Internet</a></li>
 			<li><a href="#">Global Services</a></li>
 			<li><a href="#">Training Services</a></li>
 		</ul>
-		
 		<h6>COMPANY</h6>
-		<ul>
+		<ul class="footer-links">
 			<li><a href="#">Executive Profiles</a></li>
 			<li><a href="#">Clients</a></li>
 			<li><a href="#">Investors</a></li>
@@ -284,9 +270,9 @@
 			<li><a href="#">Industry Involvment</a></li>
 			<li><a href="#">Careers</a></li>
 		</ul>
-
+		<!-- blog -->
 		<h6>LATEST BLOG NEWS</h6>
-		<table>
+		<table class="blog">
 			<tr>
 				<td>18 July</td>
 				<td>
@@ -294,32 +280,36 @@
 					in convergent 
 				</td>
 		</table>
-		
 		<h6>SUBSCRIBE TO COMVERSE</h6>
-
-		<form action="#" method="POST">
+		<form class="join-us" action="#" method="POST">
 			<div >
 				<label for="email">Email</label>
 				<input type="email" name="email" id="email" 
 						placeholder="ronit.klein@gmail.com" value="">
 				<button type="sigh up">Sign Up</button>
 			</div>
-			
 		</form>
 		<small>Copyright © 2012 Comverse, inc.</small>
 		<small><a href="#">Privacy Policy</a></small>
-		
-		
-			<img src="http://placehold.it/10x10" alt="youtube" title="youtube"
-			height="10" width="10">
-		
-			<img src="http://placehold.it/10x10" alt="twitter" title="twitter"
-			height="10" width="10">
-	
-			<img src="http://placehold.it/10x10" alt="in" title="in"
-			height="10" width="10">
-		
+		<ul class="social-icons">
+			<li>
+				<a href="https://www.youtube.com/">
+					<img src="http://placehold.it/10x10" alt="youtube" title="youtube" height="10" width="10">
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/">
+					<img src="http://placehold.it/10x10" alt="twitter" title="twitter" height="10" width="10">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com
 
+				">
+					<img src="http://placehold.it/10x10" alt="linkedin" title="linkedin" height="10" width="10">
+				</a>
+			</li>
+		</ul>
 	</footer>
 <!-- footer ends -->
 	</body>
