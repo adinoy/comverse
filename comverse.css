@@ -47,8 +47,18 @@ li {
 .lang {
 	position: relative;
 }
-.search {
+select#lang {
+	border: none;
+  	background: none;
+}
+.lang li a {
+	color: #585951;
+	text-decoration: none;
+	font-size: 12px;
+}
+#devider {
   position: relative;
+  top: 6px;
 }
 .aboutus {
 	background: url(img/content-bg.jpg) no-repeat 60% 70%;
